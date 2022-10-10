@@ -2,7 +2,7 @@ import { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "./context/AuthProvider";
 
 import axios from './api/axios';
-const LOGIN_URL = '/auth';
+const LOGIN_URL = 'http://localhost:4000/auth';
 
 const Login = () => {
   const { setAuth } = useContext(AuthContext);
@@ -95,7 +95,7 @@ const Login = () => {
           value={pwd}
           required
         />
-        <button>Sign In</button>{" "}
+        <button>Sign In</button>
         {/* No need to use onClick event handler here. */}
       </form>
     </section>
